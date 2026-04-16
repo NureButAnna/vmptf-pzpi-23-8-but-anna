@@ -1,0 +1,156 @@
+body {
+    font-family: "Times New Roman", Georgia, serif;
+    background-color: #f5f5f5;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #ddd;
+    font-family: "Great Vibes", cursive;;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.filter-form {
+    margin-bottom: 20px;
+}
+
+.filter-form label {
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.filter-form select {
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.filter-form select:hover {
+    border-color: #888;
+}
+
+footer {
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #555;
+}
+
+footer h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.back-button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: 1px solid #aaa;
+    background: #eee;
+    cursor: pointer;
+}
+
+.back-button a {
+    text-decoration: none;
+    color: #333;
+}
+
+.back-button:hover {
+    background: #ddd;
+}
+
+.list h1 {
+    font-size: 28px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.item {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.item h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.item h2 a {
+    text-decoration: none;
+    color: #000;
+}
+
+.item h2 a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.author, .date {
+    font-size: 14px;
+    color: #777;
+}
+
+.btn {
+    padding: 6px 12px;
+    border: 1px solid #888;
+    background: #fafafa;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #333;
+}
+
+.btn:hover {
+    background: #eaeaea;
+}
+
+.features h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.features p {
+    margin-bottom: 10px;
+}
+
+.back-link a{
+    text-decoration: none;
+    color: black;
+}
+
+.back-link a:hover{
+    text-decoration: underline;
+    color: #777;
+}
