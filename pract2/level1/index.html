@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про мене</title>
+</head>
+<body>
+
+    <div id="container">
+         <h1>Про мене</h1>
+    </div>
+
+    <script>
+
+        fetch('data.json')
+            .then(response => response.text()) 
+            .then(text => {
+
+                const data = JSON.parse(text);
+
+                const container = document.getElementById('container');
+
+                const nameElement = document.createElement('p');
+                nameElement.textContent = "Ім'я: " + data.name;
+
+                const surnameElement = document.createElement('p');
+                surnameElement.textContent = "Прізвище: " + data.surname;
+
+                const ageElement = document.createElement('p');
+                ageElement.textContent = "Вік: " + data.age;
+
+                const hobbyElement = document.createElement('p');
+                hobbyElement.textContent = "Хобі: " + data.hobby;
+
+                container.appendChild(nameElement);
+                container.appendChild(surnameElement);
+                container.appendChild(ageElement);
+                container.appendChild(hobbyElement);
+            })
+            .catch(error => {
+                console.error('Помилка завантаження JSON:', error);
+            });
+    </script>
+</body>
+</html>

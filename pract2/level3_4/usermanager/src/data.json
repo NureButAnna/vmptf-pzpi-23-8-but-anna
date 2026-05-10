@@ -1,0 +1,68 @@
+{
+  "groups": [
+    {
+      "id": 1,
+      "name": "ЦА"
+    },
+    {
+      "id": 2,
+      "name": "Постійний клієнт"
+    },
+    {
+      "id": 3,
+      "name": "Новий клієнт"
+    },
+    {
+      "id": 4,
+      "name": "VIP-клієнт"
+    },
+    {
+      "id": 5,
+      "name": "Неактивний клієнт"
+    }
+  ],
+  "users": [
+    {
+      "id": 101,
+      "name": "Анна Бут",
+      "email": "anna.but@gmail.com",
+      "groupId": 1
+    },
+    {
+      "id": 102,
+      "name": "Олександр Іваненко",
+      "email": "oleksandr.ivanenko@gmail.com",
+      "groupId": 2
+    },
+    {
+      "id": 103,
+      "name": "Марія Коваленко",
+      "email": "maria.kovalenko@gmail.com",
+      "groupId": 2
+    },
+    {
+      "id": 104,
+      "name": "Дмитро Шевченко",
+      "email": "dmytro.shevchenko@gmail.com",
+      "groupId": 3
+    },
+    {
+      "id": 105,
+      "name": "Ірина Мельник",
+      "email": "iryna.melnyk@gmail.com",
+      "groupId": 4
+    },
+    {
+      "id": 106,
+      "name": "Петро Петренко",
+      "email": "petrenkop1223@gmail.com",
+      "groupId": 5
+    },
+    {
+      "id": 107,
+      "name": "Ярослава Мельник",
+      "email": "yaroslava.melnyk@gmail.com",
+      "groupId": 1
+    }
+  ]
+}

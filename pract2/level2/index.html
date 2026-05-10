@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Парсер JSON</title>
+</head>
+<body>
+
+    <div id="container">
+         <h2>Парсер JSON</h2>
+    </div>
+
+    <script>
+
+        const data = `
+        {
+            "Назва": "Кобзар",
+            "Автор": "Тарас Шевченко",
+            "Рік": 1840,
+            "Жанри": ["Поезія", "Література"],
+            "Інформація": {
+                "Мова": "Українська",
+                "Місто": "Київ"
+            }
+        }
+        `;
+
+        const obj = JSON.parse(data);
+
+        const table = document.createElement("table");
+        table.border = 1
+
+        table.innerHTML = `
+        <tr>
+            <th>Ключ</th>
+            <th>Значення</th>
+        </tr>
+        `;
+
+        function parse(obj, parent = "") {
+
+            for (const key in obj) {
+
+                const value = obj[key];
+                const fullKey = parent ? `${parent}.${key}` : key;
+
+                const row = document.createElement("tr");
+
+                if (typeof value === "object" && value !== null) {
+
+                    row.innerHTML = `
+                        <td>${fullKey}</td>
+                        <td>${Array.isArray(value) ? value.join(", ") : "Object"}</td>
+                    `;
+
+                    table.appendChild(row);
+
+                    if (!Array.isArray(value)) {
+                        parse(value, fullKey);
+                    }
+
+                    } else {
+
+                        row.innerHTML = `
+                            <td>${fullKey}</td>
+                            <td>${value}</td>
+                        `;
+
+                        table.appendChild(row);
+                    }
+                }
+            }
+
+            parse(obj);
+
+            document.getElementById("container").appendChild(table);
+
+    </script>
+
+</body>
+</html>
