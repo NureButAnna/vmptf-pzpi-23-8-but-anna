@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyFisrtApplication</string>
+    <string name="Greeting">Вітаю!</string>
+</resources>
