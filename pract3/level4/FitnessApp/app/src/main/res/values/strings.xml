@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">FitnessApp</string>
+    <string name="fitness_tracker">Фітнес-трекер</string>
+    <string name="statistics">Статистика активності</string>
+    <string name="calories_burned">Спалені калорії</string>
+    <string name="calories_number">1250</string>
+    <string name="workouts">Тренування</string>
+    <string name="workouts_num">12</string>
+    <string name="minutes">Хвилини</string>
+    <string name="workouts_time">540</string>
+    <string name="add_workout">Додати тренування</string>
+    <string name="workout_list">Список тренувань</string>
+    <string name="workout_name">Назва тренування</string>
+    <string name="workout_type">Тип тренування</string>
+    <string name="duration_minutes">Тривалість (хвилин)</string>
+    <string name="calories">Калорії</string>
+    <string name="date">Дата</string>
+    <string name="save">Зберегти тренування</string>
+    <string name="back_main"> Повернутися на головну</string>
+</resources>
