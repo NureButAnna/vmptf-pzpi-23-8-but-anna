@@ -1,0 +1,119 @@
+.create-post-page {
+    min-height: 100vh;
+    background: #f8f5f2;
+    font-family: "Times New Roman", serif;
+}
+
+.navigation {
+    padding: 24px 32px;
+}
+
+.navigation a {
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.navigation a:hover {
+    color: #374151;
+}
+
+.create-post-container {
+    display: flex;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+.create-post-card {
+    width: 100%;
+    max-width: 850px;
+
+    background: #ffffff;
+
+    border: 1px solid #ece7e2;
+    border-radius: 16px;
+
+    padding: 40px;
+
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.create-post-card h1 {
+    text-align: center;
+
+    margin-bottom: 32px;
+
+    color: #3d3d3d;
+    font-weight: normal;
+}
+
+.create-post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: #4a4a4a;
+    font-size: 1.05rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    padding: 12px 14px;
+
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+
+    background: #faf8f6;
+
+    font-size: 1rem;
+    font-family: inherit;
+
+    transition: 0.2s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 220px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+
+    border-color: #cbbeb1;
+    background: #ffffff;
+}
+
+.publish-btn {
+    margin-top: 12px;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #4a4a4a;
+    color: white;
+
+    font-size: 1.05rem;
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.publish-btn:hover {
+    background: #333333;
+}

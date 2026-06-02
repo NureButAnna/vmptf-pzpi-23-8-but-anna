@@ -1,0 +1,147 @@
+.post-page {
+  min-height: 100vh;
+  padding: 48px 24px;
+  background-color: #f8f5f2;
+  font-family: Georgia, serif;
+  color: #4a4a4a;
+}
+
+.content-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.post {
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 16px;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.04),
+    0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.post-date {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  color: #9b9b9b;
+}
+
+.post h1 {
+  margin: 0 0 16px;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #3d3d3d;
+}
+
+.post-meta {
+  margin-bottom: 28px;
+  font-size: 0.95rem;
+  color: #7d7d7d;
+}
+
+.post-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #555555;
+  white-space: pre-line;
+}
+
+.comment-form {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.comment-form input {
+  flex: 1;
+  padding: 12px 14px;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  background-color: #faf8f6;
+
+  font-size: 1rem;
+  font-family: Georgia, serif;
+  color: #4a4a4a;
+
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.comment-form input:focus {
+  border-color: #cbbeb1;
+  box-shadow: 0 0 0 3px rgba(203, 190, 177, 0.25);
+}
+
+.comment-form button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+
+  background-color: #4a4a4a;
+  color: #ffffff;
+
+  font-size: 0.95rem;
+  font-family: Georgia, serif;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.comment-form button:hover {
+  background-color: #333333;
+}
+
+.comment-form button:active {
+  transform: scale(0.97);
+}
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.comment {
+  padding: 16px 18px;
+  background-color: #faf8f6;
+
+  border: 1px solid #ece7e2;
+  border-radius: 12px;
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.comment:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.post-navigation {
+  margin-bottom: 12px;
+}
+
+.post-navigation a {
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+
+.post-navigation navigation a:hover {
+  color: #374151;
+}
+
+.post-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 20px 0;
+}
