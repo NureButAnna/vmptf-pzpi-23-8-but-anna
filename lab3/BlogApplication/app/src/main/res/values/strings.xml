@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BlogApplication</string>
+    <string name="blog">Blog</string>
+    <string name="add_post">Add Post</string>
+    <string name="comment">💬 Коментарі</string>
+    <string name="write_comment">Написати коментар...</string>
+
+    <string-array name="categories">
+        <item>Всі</item>
+        <item>Андроїд</item>
+        <item>Програмування</item>
+        <item>Дизайн</item>
+        <item>Штучний інтелект</item>
+    </string-array>
+</resources>
